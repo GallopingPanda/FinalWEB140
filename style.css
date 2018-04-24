@@ -33,7 +33,7 @@ footer {
     color: #fff;
 }
 #home {
-    background:  url(imgs/blur.png) no-repeat center center fixed;
+    background:  url(blur.png) no-repeat center center fixed;
     display: table;
     height:100%;
     position: relative;
