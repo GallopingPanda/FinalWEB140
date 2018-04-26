@@ -94,5 +94,6 @@ th {
     .headerLogo{
         height: 50px;
         width:194px;
+        padding-top: 15px;
     }
 }
