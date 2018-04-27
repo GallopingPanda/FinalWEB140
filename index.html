@@ -6,9 +6,52 @@
     <meta name="viewport" content="width=device-width, initial scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+            $(function(){
+
+                 var divPosition = $('.mjrCourses').offset();
+
+                    $('.mjrCoursesbtn').click(function(){
+                    $('html, body').animate({scrollTop : divPosition.top-85},"slow");
+                    return false;
+                        }); 
+                        });
+        
+            $(function(){
+                            
+                 var divPosition = $('.mjrElectives').offset();
+
+                    $('.mjrElectivesbtn').click(function(){
+                    $('html, body').animate({scrollTop : divPosition.top-85},"slow");
+                    return false;
+                        });
+                        });
+        
+                  $( function() {
+                    $( "#dialog" ).dialog({
+                      autoOpen: false,
+                      show: {
+                        effect: "blind",
+                        duration: 1000
+                      },
+                      hide: {
+                        effect: "blind",
+                        duration: 1000
+                      }
+                    });
+
+                    $( "#cti110-dia" ).click(function() {
+                      $( "#dialog" ).dialog( "open" );
+                    });
+                  } );
+    </script>
     <link href="style.css" rel="stylesheet"/>
     
 </head>
@@ -46,19 +89,12 @@
                 <h3>(AAS) A25590I</h3>
                 <!--add buttons here later -->
                 <!--button scrolls too far on mobile-->
-                <a href="#" class="btn btn-default btn-lg mjrCourses">Major Courses</a>
+                <a href="#" class="btn btn-default btn-lg mjrCoursesbtn">Major Courses</a>
+                   
+                <a href="#" class="btn btn-default btn-lg mjrElectivesbtn">Major Electives</a>
                     <script>
-                        $(document).ready(function(){
-
-                            var divPosition = $('.mjrCourses').offset();
-
-                        $('.mjrCourses').click(function(){
-                            $('html, body').animate({scrollTop : divPosition.top + 300},"slow");
-                            return false;
-                            });
-                        });
+                        
                     </script>
-                <a href="#" class="btn btn-default btn-lg">Major Electives</a>
                 <a href="#" class="btn btn-default btn-lg">General Ed</a>
                 <a href="#" class="btn btn-default btn-lg">Suggested Schedule</a>
                 <a href="#" class="btn btn-default btn-lg">Job Opportunities</a>
@@ -66,7 +102,7 @@
     </div>
     
     <div class="padding">
-        <div class="container">
+        <div class="container mjrCourses">
             <div class="row">
                 <div class="col-sm-6">
                     <h2>Description</h2>
@@ -77,7 +113,7 @@
                     Graduates should qualify for employment in entry-level positions with businesses, educational systems, and governmental agencies which rely on computer systems to manage information. The program will incorporate the competencies of industry-recognized certification exams.</p>
                     
                     <!--add relavant photo-->
-                    
+                    <!--add dialogs https://jqueryui.com/dialog/#animated-->
                 </div>
                 <div class="col-sm-6">
                     <h2>Major Courses</h2>
@@ -90,7 +126,7 @@
                             <th>Credits</th>
                         </tr>
                         <tr>
-                            <td><a href="#">CTI 110</a></td>
+                            <td><a href="#target" id="cti110-dia">CTI 110</a></td>
                             <td>Web, Pgm, & Db Foundation</td>
                             <td>2</td>
                             <td>2</td>
@@ -196,7 +232,20 @@
                         </tr>
                         
                     </table>
+                    <div id="dialog" title="CTI 110	Web, Pgm, & Db Foundation">
+                        <p>This course covers the introduction of the tools and resources available to students in programming, mark-up language and services on the Internet. Topics include standard mark-up language Internet services, creating web pages, using search engines, file transfer programs; and database design and creation with DBMS products. Upon completion, students should be able to demonstrate knowledge of programming tools, deploy a web-site with mark-up tools, and create a simple database table.</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="bkg-two"></div>
+    
+    <div class="padding mjrElectives">
+        <div class="container">
+            <div class="row">
+            
             </div>
         </div>
     </div>
