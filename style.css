@@ -106,12 +106,31 @@ th {
     width: 100%;
     background-size: cover;
 }
+#bkg-four {
+    background:  url(contact.jpeg) no-repeat center center fixed;
+    display: table;
+    height:100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+#bkg-five {
+    background:  url(blur.png) no-repeat center center fixed;
+    display: table;
+    height:100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
 #dialog{
     display:none;
     background-color: white;
 }
 .h4Padding{
     padding-top:23px;
+}
+.h2Padding{
+    padding-top:63px;
 }
 @media (max-width: 768px){
     .headerLogo{
