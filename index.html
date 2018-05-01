@@ -14,6 +14,13 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+            
+            
+            
+
+        
+        
+        
             $(function(){
 
                  var divPosition = $('.mjrCourses').offset();
@@ -34,7 +41,19 @@
                         });
                         });
         
-                  $( function() {
+            $(function(){
+                            
+                 var divPosition = $('.genEd').offset();
+
+                    $('.genEdbtn').click(function(){
+                    $('html, body').animate({scrollTop : divPosition.top-85},"slow");
+                    return false;
+                        });
+                        });
+        
+                 
+
+            $(function() {
                     $( "#dialog" ).dialog({
                       autoOpen: false,
                       show: {
@@ -92,10 +111,9 @@
                 <a href="#" class="btn btn-default btn-lg mjrCoursesbtn">Major Courses</a>
                    
                 <a href="#" class="btn btn-default btn-lg mjrElectivesbtn">Major Electives</a>
-                    <script>
-                        
-                    </script>
-                <a href="#" class="btn btn-default btn-lg">General Ed</a>
+                
+                <a href="#" class="btn btn-default btn-lg genEdbtn">General Ed</a>
+            
                 <a href="#" class="btn btn-default btn-lg">Suggested Schedule</a>
                 <a href="#" class="btn btn-default btn-lg">Job Opportunities</a>
         </div>
@@ -245,7 +263,505 @@
     <div class="padding mjrElectives">
         <div class="container">
             <div class="row">
-            
+                <div class="col-sm-6">
+                    <h2>Major Electives</h2>
+                <table>
+                    <tr>
+                        <th>Course Number</th>
+                        <th>Title</th>
+                        <th>Class Hours</th>
+                        <th>Lab Hours</th>
+                        <th>Credits</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/CTS-Computer-Information-Technology-Courses/100/CTS-130" class="sc-courselink">CTS 130</a>
+                        </td>
+                        <td>Spreadsheet</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/CTS-Computer-Information-Technology-Courses/200/CTS-230" class="sc-courselink">CTS 230</a>
+                        </td>
+                        <td>Advanced Spreadsheet</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/DBA-Database-Management-Technology-Courses/100/DBA-115" class="sc-courselink">DBA 115</a>
+                        </td>
+                        <td>Database Applications</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/MIT-Media-Integration-Course/100/MIT-110">MIT 110</a>
+                        </td>
+                        <td>Intro to Distance Learning</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/NOS-Networking-Operating-System-Courses/200/NOS-220">NOS 220</a>
+                        </td>
+                        <td>Linux/UNIX Admin I</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/WBL-Work-Based-Learning-Courses/100/WBL-111">WBL 111</a>
+                        </td>
+                        <td>Work-Based Learning I</td>
+                        <td>
+                            <div>
+                                0
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                10
+                            </div>
+                        </td>
+                        <td>
+                            <p>1</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/WBL-Work-Based-Learning-Courses/100/WBL-112">WBL 112</a>
+                        </td>
+                        <td>Work-Based Learning I</td>
+                        <td>
+                            <div>
+                                0
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                20
+                            </div>
+                        </td>
+                        <td>
+                            <p>2</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/WEB-Web-Technologies-Courses/100/WEB-140">WEB 140</a>
+                        </td>
+                        <td>Web Development Tools</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/WEB-Web-Technologies-Courses/200/WEB-210">WEB 210</a>
+                        </td>
+                        <td>Web Design</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/WEB-Web-Technologies-Courses/200/WEB-214">WEB 214</a>
+                        </td>
+                        <td>Social Media</td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                2
+                            </div>
+                        </td>
+                        <td>
+                            <p>3</p>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div id="bkg-three"></div>
+    
+    <div class="padding genEd">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>General Education Courses</h2>
+                            <table>
+                                <tr>
+                                    <th>Course Number</th>
+                                    <th>Title</th>
+                                    <th>Class Hours</th>
+                                    <th>Lab Hours</th>
+                                    <th>Credits</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/ACA-Academic-Related-Courses/100/ACA-115">ACA 115</a>
+                                    </td>
+                                    <td>Success and Study Skills</td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            2
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>1</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4>Communications:</h4>
+                            <table>
+                                <tr>
+                                    <th>Course Number</th>
+                                    <th>Title</th>
+                                    <th>Class Hours</th>
+                                    <th>Lab Hours</th>
+                                    <th>Credits</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/COM-Communication-Courses/100/COM-110">COM 110</a>
+                                    </td>
+                                    <td>Intro to Communication</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/SmartCatalog-Narrative-Courses/or"></a>
+                                    </td>
+                                    <td>or</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/COM-Communication-Courses/200/COM-231">COM 231</a>
+                                    </td>
+                                    <td>Public Speaking</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/ENG-English-Courses/100/ENG-111">ENG 111</a>
+                                    </td>
+                                    <td>Writing and Inquiry</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4>Humanities/Fine Arts: Select One</h4>
+                            <p></p>
+                            <table>
+                                <tr>
+                                    <th>Course Number</th>
+                                    <th>Title</th>
+                                    <th>Class Hours</th>
+                                    <th>Lab Hours</th>
+                                    <th>Credits</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/ART-Art-Courses/100/ART-111">ART 111</a>
+                                    </td>
+                                    <td>Art Appreciation</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/HUM-Humanities-Courses/100/HUM-110">HUM 110</a>
+                                    </td>
+                                    <td>Technology and Society</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/HUM-Humanities-Courses/100/HUM-115">HUM 115</a>
+                                    </td>
+                                    <td>Critical Thinking</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/MUS-Music-Courses/100/MUS-110">MUS 110</a>
+                                    </td>
+                                    <td>Music Appreciation</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                            </table>
+                </div>
+                <div class="col-cm-6">
+                            <h4 class="h4Padding">Social/Behavioral Sciences: Select One</h4>
+                            <p></p>
+                            <table>
+                                <tr>
+                                    <th>Course Number</th>
+                                    <th>Title</th>
+                                    <th>Class Hours</th>
+                                    <th>Lab Hours</th>
+                                    <th>Credits</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/PSY-Psychology-Courses/100/PSY-150">PSY 150</a>
+                                    </td>
+                                    <td>General Psychology</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/SOC-Sociology-Courses/200/SOC-210">SOC 210</a>
+                                    </td>
+                                    <td>Introduction to Sociology</td>
+                                    <td>
+                                        <div>
+                                            3
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            0
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <h4>Natural Sciences/Mathematics:</h4>
+                            <table>
+                                <tr>
+                                    <th>Course Number</th>
+                                    <th>Title</th>
+                                    <th>Class Hours</th>
+                                    <th>Lab Hours</th>
+                                    <th>Credits</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/MAT-Mathematics-Courses/100/MAT-121">MAT 121</a>
+                                    </td>
+                                    <td>Algebra/Trigonometry I</td>
+                                    <td>
+                                        <div>
+                                            2
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            2
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/Narrative-Courses/MAT-121-or-higher"></a>
+                                    </td>
+                                    <td>(MAT 121 or higher)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p></p>
+                                    </td>
+                                </tr>
+                            </table>
+                </div>
             </div>
         </div>
     </div>

@@ -98,9 +98,20 @@ th {
     width: 100%;
     background-size: cover;
 }
+#bkg-three {
+    background:  url(39229891957ab2bfad33110.66149719.jpg) no-repeat center center fixed;
+    display: table;
+    height:100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
 #dialog{
     display:none;
     background-color: white;
+}
+.h4Padding{
+    padding-top:23px;
 }
 @media (max-width: 768px){
     .headerLogo{
