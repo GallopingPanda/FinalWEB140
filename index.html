@@ -70,7 +70,7 @@
                         });
 
             $(function() {
-                    $( "#dialog" ).dialog({
+                    $( ".cti110" ).dialog({
                       autoOpen: false,
                       show: {
                         effect: "blind",
@@ -83,9 +83,26 @@
                     });
 
                     $( "#cti110-dia" ).click(function() {
-                      $( "#dialog" ).dialog( "open" );
+                      $( ".cti110" ).dialog( "open" );
                     });
                   } );
+            $(function() {
+                        $( ".cts130" ).dialog({
+                          autoOpen: false,
+                          show: {
+                            effect: "blind",
+                            duration: 1000
+                          },
+                          hide: {
+                            effect: "blind",
+                            duration: 1000
+                          }
+                        });
+
+                        $( "#cts130-dia" ).click(function() {
+                          $( ".cts130" ).dialog( "open" );
+                        });
+                      } );
     </script>
     <link href="style.css" rel="stylesheet"/>
     
@@ -267,8 +284,11 @@
                         </tr>
                         
                     </table>
-                    <div id="dialog" title="CTI 110	Web, Pgm, & Db Foundation">
+                    <div id="dialog" class="cti110" title="CTI 110	Web, Pgm, & Db Foundation">
                         <p>This course covers the introduction of the tools and resources available to students in programming, mark-up language and services on the Internet. Topics include standard mark-up language Internet services, creating web pages, using search engines, file transfer programs; and database design and creation with DBMS products. Upon completion, students should be able to demonstrate knowledge of programming tools, deploy a web-site with mark-up tools, and create a simple database table.</p>
+                    </div>
+                    <div id="dialog" class="cts130 "title="CTS 130 Spreadsheet">
+                        <p>This course introduces basic spreadsheet design and development. Topics include writing formulas, using functions, enhancing spreadsheets, creating charts, and printing. Upon completion, students should be able to design and print basic spreadsheets and charts.</p>
                     </div>
                 </div>
             </div>
@@ -292,7 +312,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://clevelandcc.smartcatalogiq.com/2017-2018/Academic-Bulletin-Student-Handbook/Course-Descriptions/CTS-Computer-Information-Technology-Courses/100/CTS-130" class="sc-courselink">CTS 130</a>
+                            <a href="#" id="cts130-dia">CTS 130</a>
                         </td>
                         <td>Spreadsheet</td>
                         <td>
